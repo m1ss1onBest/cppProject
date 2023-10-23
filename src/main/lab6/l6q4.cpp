@@ -14,8 +14,8 @@ void L6Q4()
     {
         encrypted_string += i + 1;
     }
-        //test comment
-        //decoder
+    
+    //decoder
     for(const char i : encrypted_string)
     {
         decrypted_string += i - 1;

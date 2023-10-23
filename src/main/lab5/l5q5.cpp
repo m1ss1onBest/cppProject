@@ -33,16 +33,17 @@ void L5Q5()
 
     int size = 0;
     
-    if(command == 'p') {
+    if(command == 'p')
+        {
         size = countPositive;
         isPositive = true;
         }
     
     else if(command == 'n')
-    {
+        {
         isPositive = false;
         size = countNegative;
-    }
+        }
     
     else std::cout << "input error";
 
@@ -54,7 +55,7 @@ void L5Q5()
     {
         for(const int& j : i)
         {
-            if( (isPositive) ? j > 0 : j < 0)
+            if( isPositive ? j > 0 : j < 0)
             {
                 output_array[index] = j;
                 index--;
@@ -67,4 +68,5 @@ void L5Q5()
     {
         std::cout << output_array[i] << " ";
     }
+    delete[] output_array;
 }

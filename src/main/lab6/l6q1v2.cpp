@@ -12,9 +12,8 @@ void L6Q1V2()
     std::stringstream everySingleWord(input_string);
     while(everySingleWord >> words)
     {
-        const int word_length = strlen(words);
 
-        if(words[0] == words[word_length - 1] && word_length > 1)
+        if(words[0] == words[strlen(words) - 1] && strlen(words) > 1)
         {
             std::cout << "ETW: " << words << "\n";
         }

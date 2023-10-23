@@ -11,7 +11,7 @@ void L5Q4()
 
     //region add array
     std::cout << std::setw(15) << "array:\n";
-    for(auto & i: A)
+    for(auto& i : A)
     {
         for(double& j : i)
         {
@@ -23,9 +23,9 @@ void L5Q4()
 
     //region calculating columns average
     std::cout << std::setw(15) << "average:\n";
-    for(int j{ 0}; j < 4; j++)
+    for(int j {0}; j < 4; j++)
     {
-        for(int i{ 0}; i < 5; i++)
+        for(int i {0}; i < 5; i++)
         {
             result[j] += A[i][j];
         }

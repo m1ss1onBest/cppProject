@@ -28,7 +28,7 @@ void L5Q3()
     for(const int i : array)
     {
         positionCounter++;
-        if(i % 2 == 1 && i > max)
+        if(abs(i) % 2 == 1 && i >= max)
         {
             max = i;
             maxOddPos = positionCounter;
