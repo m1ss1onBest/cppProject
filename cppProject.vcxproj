@@ -48,7 +48,6 @@
     <ClCompile Include="src\main\strings.cpp" />
     <ClCompile Include="src\main\TEST.cpp" />
     <ClCompile Include="src\math\factorial.cpp" />
-    <ClCompile Include="src\notes\note.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\main\lab1\l1.h" />
@@ -58,7 +57,6 @@
     <ClInclude Include="src\main\lab5\l5.h" />
     <ClInclude Include="src\main\lab6\l6.h" />
     <ClInclude Include="src\math\myMath.h" />
-    <ClInclude Include="src\notes\note.h" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\main\lab6\output.txt" />

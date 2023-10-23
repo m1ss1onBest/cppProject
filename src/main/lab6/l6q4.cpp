@@ -14,7 +14,7 @@ void L6Q4()
     {
         encrypted_string += i + 1;
     }
-        //test commentk
+        //test comment
         //decoder
     for(const char i : encrypted_string)
     {
@@ -22,7 +22,7 @@ void L6Q4()
     }
 
     //output.txt
-    std::ofstream file(R"(D:\TRUE MWP\c++\cStuff\cStuff\src\cpp\main\lab6\output.txt)");
+    std::ofstream file(R"(D:\TRUE MWP\c++\cppProject\src\main\lab6\output.txt`)");
     file << "encrypted: " << encrypted_string << "\n";
     file << "decrypted: " << decrypted_string;
     file.close();
