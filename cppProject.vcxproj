@@ -20,6 +20,48 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\cppProject.cpp" />
+    <ClCompile Include="src\main\lab1\l1q1.cpp" />
+    <ClCompile Include="src\main\lab1\l1q2.cpp" />
+    <ClCompile Include="src\main\lab2\l2q1.cpp" />
+    <ClCompile Include="src\main\lab2\l2q2.cpp" />
+    <ClCompile Include="src\main\lab2\l2q3.cpp" />
+    <ClCompile Include="src\main\lab3\l3q1.cpp" />
+    <ClCompile Include="src\main\lab3\l3q2.cpp" />
+    <ClCompile Include="src\main\lab4\l4dz1.cpp" />
+    <ClCompile Include="src\main\lab4\l4dz2.cpp" />
+    <ClCompile Include="src\main\lab4\l4q1.cpp" />
+    <ClCompile Include="src\main\lab4\l4q2.cpp" />
+    <ClCompile Include="src\main\lab4\l4q3.cpp" />
+    <ClCompile Include="src\main\lab4\l4q4.cpp" />
+    <ClCompile Include="src\main\lab5\l5q1.cpp" />
+    <ClCompile Include="src\main\lab5\l5q2.cpp" />
+    <ClCompile Include="src\main\lab5\l5q3.cpp" />
+    <ClCompile Include="src\main\lab5\l5q4.cpp" />
+    <ClCompile Include="src\main\lab5\l5q5.cpp" />
+    <ClCompile Include="src\main\lab6\l6q1.cpp" />
+    <ClCompile Include="src\main\lab6\l6q1v2.cpp" />
+    <ClCompile Include="src\main\lab6\l6q2.cpp" />
+    <ClCompile Include="src\main\lab6\l6q2v2.cpp" />
+    <ClCompile Include="src\main\lab6\l6q3.cpp" />
+    <ClCompile Include="src\main\lab6\l6q3v2.cpp" />
+    <ClCompile Include="src\main\lab6\l6q4.cpp" />
+    <ClCompile Include="src\main\strings.cpp" />
+    <ClCompile Include="src\main\TEST.cpp" />
+    <ClCompile Include="src\math\factorial.cpp" />
+    <ClCompile Include="src\notes\note.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\main\lab1\l1.h" />
+    <ClInclude Include="src\main\lab2\l2.h" />
+    <ClInclude Include="src\main\lab3\l3.h" />
+    <ClInclude Include="src\main\lab4\l4.h" />
+    <ClInclude Include="src\main\lab5\l5.h" />
+    <ClInclude Include="src\main\lab6\l6.h" />
+    <ClInclude Include="src\math\myMath.h" />
+    <ClInclude Include="src\notes\note.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\main\lab6\output.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

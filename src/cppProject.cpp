@@ -1,6 +1,6 @@
-﻿#include <iostream>
+﻿#include "main/lab6/l6.h"
 
 int main()
 {   
-    std::cout << "a";
+   L6Q1();
 }
