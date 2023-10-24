@@ -5,6 +5,7 @@
 void L6Q4()
 {
     std::string input_string;
+    std::cout << "encrypt> ";
     std::getline(std::cin, input_string);
     std::string encrypted_string;
     std::string decrypted_string;
@@ -22,7 +23,7 @@ void L6Q4()
     }
 
     //output.txt
-    std::ofstream file(R"(D:\TRUE MWP\c++\cppProject\src\main\lab6\output.txt`)");
+    std::ofstream file(R"(D:\TRUE MWP\c++\cppProject\src\main\lab6\output.txt)");
     file << "encrypted: " << encrypted_string << "\n";
     file << "decrypted: " << decrypted_string;
     file.close();
