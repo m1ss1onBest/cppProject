@@ -45,9 +45,10 @@
     <ClCompile Include="src\main\lab6\l6q3.cpp" />
     <ClCompile Include="src\main\lab6\l6q3v2.cpp" />
     <ClCompile Include="src\main\lab6\l6q4.cpp" />
+    <ClCompile Include="src\main\lab7\l7q1.cpp" />
     <ClCompile Include="src\main\strings.cpp" />
     <ClCompile Include="src\main\TEST.cpp" />
-    <ClCompile Include="src\math\factorial.cpp" />
+    <ClCompile Include="src\meth\factorial.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\main\lab1\l1.h" />
@@ -56,7 +57,8 @@
     <ClInclude Include="src\main\lab4\l4.h" />
     <ClInclude Include="src\main\lab5\l5.h" />
     <ClInclude Include="src\main\lab6\l6.h" />
-    <ClInclude Include="src\math\myMath.h" />
+    <ClInclude Include="src\main\lab7\l7.h" />
+    <ClInclude Include="src\meth\myMath.h" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\main\lab6\output.txt" />

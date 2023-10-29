@@ -1,6 +1,6 @@
-﻿#include "main/lab6/l6.h"
-
-int main()
+﻿#include "main/lab7/l7.h"
+#include <iostream>
+void main()
 {
-    L6Q2();
+    L7Q1();
 }
