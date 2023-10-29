@@ -4,7 +4,7 @@
 
 void L6Q1V2()
 {
-    constexpr char input_string[] = "this is so suspicious you know";
+    constexpr char input_string[] = "tthis is ggigigg iss aa a sus";
     char words[100];
 
     std::cout << "WordList:\n";

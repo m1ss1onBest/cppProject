@@ -4,7 +4,6 @@
 #include <sstream>
 #include <string>
 
-//16:35 -> 
 void L6Q3()
 {
     std::cout << "which letter in physics is used to name:\n";

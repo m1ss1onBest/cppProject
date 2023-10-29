@@ -4,6 +4,7 @@
 
 void L6Q2V2()
 {
+    bool isAviable = false;
     std::string inputLine;
     short total_a = 0, lastname_a = 0;
     std::cout << "FIO> ";
@@ -17,8 +18,16 @@ void L6Q2V2()
     
     for (const char c : inputLine)
     {
+        if(c != ' ') isAviable = true;
         if(tolower(c) == 'a') lastname_a++;
-        if(c == ' ') break;
+        if(isAviable == true) if(c == ' ') break;
+    }
+    std::cout << "\n";
+
+    for(int i = 0; inputLine[i]; i++)
+    {
+        std::cout << inputLine[i];
+        if(inputLine[i] == 'i' || inputLine[i] == 'I') std::cout << inputLine[i];
     }
 
     std::cout

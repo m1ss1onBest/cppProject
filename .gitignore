@@ -16,3 +16,4 @@
 /x64/Debug/cppProject.vcxproj.FileListAbsolute.txt
 /x64/Debug/vc143.idb
 /x64/Debug/vc143.pdb
+*.obj

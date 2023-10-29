@@ -68,5 +68,4 @@ void L5Q5()
     {
         std::cout << output_array[i] << " ";
     }
-    delete[] output_array;
 }

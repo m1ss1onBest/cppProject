@@ -7,7 +7,7 @@
 void L5Q4()
 {
     srand(static_cast<unsigned int>(time(nullptr)));
-    double A[5][4], result[] {0, 0, 0, 0};
+    double A[4][5], result[] {0, 0, 0, 0, 0};
 
     //region add array
     std::cout << std::setw(15) << "array:\n";
@@ -23,13 +23,13 @@ void L5Q4()
 
     //region calculating columns average
     std::cout << std::setw(15) << "average:\n";
-    for(int j {0}; j < 4; j++)
+    for(int j {0}; j < 5; j++)
     {
-        for(int i {0}; i < 5; i++)
+        for(int i {0}; i < 4; i++)
         {
             result[j] += A[i][j];
         }
-        result[j] /= 5;
+        result[j] /= 4;
         std::cout << std::fixed << std::setprecision(2) << std::setw(6) << result[j];
     }
 }

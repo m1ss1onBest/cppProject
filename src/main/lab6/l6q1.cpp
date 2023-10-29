@@ -5,7 +5,7 @@
 
 void L6Q1()
 {
-    const std::string input_string = "this is so suspicious you know";
+    const std::string input_string = "this is so suspicious gghg tot you know ggg a aa";
     std::string words;
     
     std::cout << "WordList:\n";
