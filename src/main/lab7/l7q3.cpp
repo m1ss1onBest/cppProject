@@ -1,40 +1,72 @@
-﻿//l7q3
-#include <iostream>
-#include <cmath>
+﻿constexpr float epsilon = 0.00001;
 
-void prtOurEquation(float z, float x, float y, short num = 1)
+unsigned long long factorial(unsigned long long);
+
+float myRoot(float);
+float myAbs(float);
+float doo(int (*operation)(float), float);
+
+float diapSum(float, float);
+float sum(float, float);
+float doo2(int (*operation) (float, float), float, float);
+
+//1
+unsigned long long factorial(const unsigned long long  n)
 {
-    std::cout << num << ": z: " << z << ", x: " << x << ", y: " << y << std::endl;
+    if(n > 1) return n * factorial(n - 1);
+    return 1;
 }
 
-float calcX(const float z)
+//2
+float myRoot(const float n)
 {
-    float x;
-    if(z <= 0) x = static_cast<float>(pow(z, 2) + 5);
-    else x = 1 / sqrt(z - 1);
+    float x = n, y = 1;
+    if(n == 0) return 0;
+
+    while(n - 1 > epsilon)
+    {
+        x = (x + y) / 2;
+        y = n / x;
+    }
     return x;
 }
 
-float equationResult(const float x)
+//3
+float myAbs(float n)
 {
-    const auto result = static_cast<float>(pow(sin(pow(x, 2) - 1), 3) + log(fabs(x)) + exp(x));
-    return result;
+    if(n < 0) n *= -1;
+    return n;
 }
 
+//4
+//can use abs, sqrt.
+float doo(int (*operation)(float), const float a)
+{
+    return operation(a);
+}
+
+//5
+float diapSum(const float a, const float b)
+{
+    int res = 0;
+    for(int i = a; i < b; res += i++) {}
+    return res;
+}
+
+//6
+float sum(const float a, const float b)
+{
+    return a + b;
+}
+
+//7
+float doo2(int (*operation)(float, float), const float a, const float b)
+{
+    return operation(a, b);
+}
+
+//region main
 void L7Q3()
 {
-    constexpr float
-    z1 = 10, z2 = 0, z3 = -5;
-    const float
-    x1 = calcX(z1),
-    x2 = calcX(z2),
-    x3 = calcX(z3),
-
-    y1 = equationResult(x1),
-    y2 = equationResult(x2),
-    y3 = equationResult(x3);
-
-    prtOurEquation(z1, x1, y1);
-    prtOurEquation(z2, x2, y2, 2);
-    prtOurEquation(z3, x3, y3, 3);
+    
 }
