@@ -1,5 +1,6 @@
 ﻿//l7q1.cpp
 #include <iostream>
+
 double equation1(const double n, const double m)
 {
     return (n + m) / 2;

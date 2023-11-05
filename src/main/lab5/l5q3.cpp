@@ -7,8 +7,7 @@ using namespace std;
 
 void L5Q3()
 {
-    srand(static_cast<unsigned int>(time(nullptr)));
-    
+    srand(static_cast<unsigned int>(time(NULL)));
     int array[10];
     int countPositive = 0;
     float sum = 0, multiplication = 1;
