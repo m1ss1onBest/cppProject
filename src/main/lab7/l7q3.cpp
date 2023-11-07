@@ -1,19 +1,11 @@
-﻿constexpr float epsilon = 0.00001;
-
-unsigned long long factorial(unsigned long long);
-
-float myRoot(float);
-float myAbs(float);
-float doo(int (*operation)(float), float);
-
-float diapSum(float, float);
-float sum(float, float);
-float doo2(int (*operation) (float, float), float, float);
+﻿//l7q3
+#include <iostream>
+constexpr float epsilon = 0.01;
 
 //1
-unsigned long long factorial(const unsigned long long  n)
+long long factorial(const long long  n)
 {
-    if(n > 1) return n * factorial(n - 1);
+    if(n > 0) return n * factorial(n -1);
     return 1;
 }
 
@@ -21,9 +13,9 @@ unsigned long long factorial(const unsigned long long  n)
 float myRoot(const float n)
 {
     float x = n, y = 1;
-    if(n == 0) return 0;
+    if (n == 0) return 0;
 
-    while(n - 1 > epsilon)
+    while (abs(x - y) > epsilon)
     {
         x = (x + y) / 2;
         y = n / x;
@@ -39,28 +31,24 @@ float myAbs(float n)
 }
 
 //4
-//can use abs, sqrt.
-float doo(int (*operation)(float), const float a)
-{
-    return operation(a);
-}
-
-//5
 float diapSum(const float a, const float b)
 {
-    int res = 0;
-    for(int i = a; i < b; res += i++) {}
+    float res = 0;
+    for (float i = a; i <= b; i++) {
+        res += i;
+    }
     return res;
 }
 
-//6
+
+//5
 float sum(const float a, const float b)
 {
     return a + b;
 }
 
-//7
-float doo2(int (*operation)(float, float), const float a, const float b)
+//6
+float doo(float (*operation)(float, float), const float a, const float b)
 {
     return operation(a, b);
 }
@@ -68,5 +56,13 @@ float doo2(int (*operation)(float, float), const float a, const float b)
 //region main
 void L7Q3()
 {
+    std::cout << "factorial " << factorial(6) << std::endl;
+    std::cout << "math.h root " << sqrt(10) << std::endl;
+    std::cout << "my root " << myRoot(10) << std::endl;
+
+    std::cout << "math.h abs " << abs(-46) << std::endl;
+    std::cout << "my abs " << myAbs(-46) << std::endl;
+
+    std::cout << "sum [4, 8] " << doo(diapSum, 4, 8) << std::endl;
     
 }
