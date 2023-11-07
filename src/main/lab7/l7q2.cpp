@@ -3,8 +3,8 @@
 #include <iostream>
 #include <string>
 
-// double tablesAmount(float, float);
-// double amountOfRolls(int, int, int);
+double tablesAmount(float, float);
+double amountOfRolls(int, int, int);
 
 double tablesAmount(float peoplePerTable, float peopleAmount)
 {
@@ -16,8 +16,7 @@ double amountOfRolls(int tablesAmount, int rollLength, int stripePerTabe)
     return ceil(totalStripeRequired/rollLength);
 }
 
-
-void prt(const std::string& message, double result)
+void prt(double result, const std::string& message)
 {
     std::cout << message << ' ' << result << std::endl;
 }
@@ -33,8 +32,8 @@ void L7Q2()
     constexpr double diameter = 1.7;
 
     const int minTablesRequired = tablesAmount(peopleCount, totalAmount);
-    prt("tables required", minTablesRequired);
+    prt(minTablesRequired, "tables required");
     
     const int totalRollsRequired = amountOfRolls(minTablesRequired, rollLength, extraRoll);
-    prt("rolls required", totalRollsRequired);
+    prt(totalRollsRequired, "rolls required");
 }
