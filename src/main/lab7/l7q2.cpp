@@ -24,7 +24,7 @@ void L7Q2()
     std::cin >> peopleAmount;
 
     std::cout << "people per table: ";
-    std::cin >> peoplePerTable;
+    std::cin >> peoplePerTable; 
 
     std::cout << "table diameter: ";
     std::cin >> tableDiameter;
