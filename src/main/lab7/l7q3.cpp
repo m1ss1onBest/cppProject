@@ -47,44 +47,27 @@ double myPow(const double x, const double n)
 }
 
 //5
-double mySin(const double x, const double t)
+double mySin(const double x, const double t = 0.01)
 {
-    double a = 1, sum = 0;
-    int maxI = 10;
+    double res = 0;
+    double calc = x;
+    int n = 1;
 
-    int i = 0;
-    while (abs(a) > t && i < maxI)
+    while (fabs(calc) > t)
     {
-        a = pow(-1, i) * ((pow(x, (2 * i + 1))) / (factorial(2 * i + 1)));
-        sum += a;
-        i++;
-    }
-    return sum;
+        n+=1;
+        calc = pow(-1, n) * pow(x, 2*n+1) / factorial(2*n+1);
+        res += calc;
+    }   
+    return res;
 }
-
 
 //region main
 void L7Q3()
 {
-    double n, t;
-    
-    std::cout << "factorial of: ";
-    std::cin >> n;
-    std::cout << factorial(n) << std::endl;
+    double n = 30, t;
+    n = n * 3.14 / 180;
 
-    std::cout << "root of: ";
-    std::cin >> n;
-    std::cout << myRoot(n) << std::endl;
-
-    std::cout << "abs of: ";
-    std::cin >> n;
-    std::cout << myAbs(n) << std::endl;
-
-    std::cout << "power of: ";
-    std::cin >> n >> t;
-    std::cout << myPow(n, t) << std::endl;
-
-    std::cout << "sin of : ";
-    std::cin >> n >> t;
-    std::cout << mySin(n, t) << std::endl;
+    double res = mySin(n);
+    std::cout << n;
 }

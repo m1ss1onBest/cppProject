@@ -1,8 +1,8 @@
 ﻿#include <iostream>
 #include "l7.h"
 
-constexpr double calcError = 0.01;
-constexpr double pi = 3.14;
+const double calcError = 0.01;
+const double pi = 3.14;
 
 bool divisionBy0 = false;
 double calcX(const double z)
