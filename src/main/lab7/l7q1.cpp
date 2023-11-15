@@ -36,7 +36,7 @@ void L7Q1()
     while (true)
     {
         double z;
-        // std::cout << "enter> ";
+        std::cout << "enter> ";
         std::cin >> z;
 
         const double x = calcX(z);

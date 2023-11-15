@@ -1,6 +1,6 @@
 ﻿#include <iostream>
-constexpr double pi = 3.14;
-constexpr double epsilon = 0.01;
+const double pi = 3.14;
+const double epsilon = 0.01;
 
 //1
 long factorial(int n)

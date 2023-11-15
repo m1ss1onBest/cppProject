@@ -5,6 +5,6 @@
 
 int main()
 {
-    L7Q1();
+    L7Q2();
     return 0;
-}
+}    
