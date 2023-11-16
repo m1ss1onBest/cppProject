@@ -13,9 +13,17 @@ struct machine
     int year;
 };
 
+struct znak
+{
+    char name[2][30];
+    char zodiac[15];
+    int bday[3];
+};
+
 void inputProperties(machine *eom);
 void generateMatrix(const machine *eom);
 void finding(machine *eom);
 
 void L8Q1();
+void l8add();
 void L8Q2();

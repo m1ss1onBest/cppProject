@@ -4,6 +4,6 @@
 
 int main()
 {
-    L8Q1();
+    l8add();
     return 0;
 }    
