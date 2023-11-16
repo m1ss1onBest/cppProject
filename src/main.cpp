@@ -1,10 +1,9 @@
 ﻿//main.cpp
-#include <iostream>
-
 #include "main/lab7/l7.h"
+#include "main/lab8/l8.h"
 
 int main()
 {
-    L7Q2();
+    L8Q1();
     return 0;
 }    

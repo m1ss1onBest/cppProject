@@ -5,7 +5,7 @@
 #include <iostream>
 
 int amount = 1;
-const int n = 7;
+const int n = 10;
 
 void inputProperties(machine *eom)
 {
@@ -71,7 +71,6 @@ void generateMatrix(const machine *eom)
 
 void L8Q1()
 {
-  
   machine eom[n];
   inputProperties(eom);
   generateMatrix(eom);

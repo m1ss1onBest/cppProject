@@ -13,7 +13,7 @@ void TEST()
     x2 = 3, y2 = 0,
     //circle
     radius = 3,
-    xc = 0, yc = 0;
+    xc = 0, yc = 0; 
     
     cin >> xMain >> yMain;
     xMain = fabs(xMain); yMain = abs(yMain);
