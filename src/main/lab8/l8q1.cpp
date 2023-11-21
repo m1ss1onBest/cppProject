@@ -30,7 +30,7 @@ void inputProperties(machine *eom)
     std::cout << "ram: ";
     std::cin >> eom[i].ram;
 
-    std::cout << "hdd: ";
+    std::cout << "hdd: "; 
     std::cin >> eom[i].hdd;
 
     std::cout << "frequency: ";
