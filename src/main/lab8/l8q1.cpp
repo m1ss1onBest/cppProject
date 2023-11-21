@@ -4,9 +4,12 @@
 #include <iomanip>
 #include <iostream>
 
+//declaration
 int amount = 1;
 const int n = 10;
+machine maxPrice;
 
+//region imput properties
 void inputProperties(machine *eom)
 {
   std::cout << "enter the amount of processors: ";
@@ -43,10 +46,11 @@ void inputProperties(machine *eom)
   }
 }
 
-void generateMatrix(const machine *eom)
+//region print database
+void printDatabase(const machine *eom)
 {
   std::cout << "EOM" << std::endl;
-  
+
   std::cout
   << std::setw(n) << "name"
   << std::setw(n) << "type"
@@ -58,20 +62,43 @@ void generateMatrix(const machine *eom)
 
   for(int i = 0; i < amount; i++)
   {
-    std::cout
-    << std::setw(n) << eom[i].name
-    << std::setw(n) << eom[i].type
-    << std::setw(n) << eom[i].ram
-    << std::setw(n) << eom[i].hdd
-    << std::setw(n) << eom[i].frequency
-    << std::setw(n) << eom[i].price
-    << std::setw(n) << eom[i].year << std::endl;
+    printObject(&eom[i], "");
   }
 }
 
+//region max by price
+void findMaxByPrice(const machine* eom)
+{
+  maxPrice = eom[0];
+  for(int i = 1; i < amount; i++)
+  {
+    if(eom[i].price >  maxPrice.price)
+    {
+      maxPrice = eom[i];
+    }
+  }
+
+  printObject(&maxPrice, "with the max price");
+}
+
+//region print object
+void printObject(const machine* eomOutput, const std::string& message = "max price: \n")
+{
+  std::cout << '\n' << message << '\n'
+  << std::setw(n) << eomOutput->name
+  << std::setw(n) << eomOutput->type
+  << std::setw(n) << eomOutput->ram
+  << std::setw(n) << eomOutput->hdd
+  << std::setw(n) << eomOutput->frequency
+  << std::setw(n) << eomOutput->price
+  << std::setw(n) << eomOutput->year << std::endl;
+}
+
+//region l8q1main
 void L8Q1()
 {
   machine eom[n];
   inputProperties(eom);
-  generateMatrix(eom);
+  printDatabase(eom);
+  findMaxByPrice(eom);
 }

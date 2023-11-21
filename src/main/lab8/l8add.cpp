@@ -41,8 +41,6 @@ void addPrint()
         << std::setw(15) << book[i].bday[0]
         << std::setw(15) << book[i].bday[1] << std::endl;
     }
-
-
 }
 
 void l8add()

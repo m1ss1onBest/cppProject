@@ -5,7 +5,7 @@
 struct machine
 {
     std::string name {"no-name-found"};
-    std::string type;
+    std::string type {"no-type"};
     int ram;
     int hdd;
     double frequency;
@@ -21,8 +21,9 @@ struct znak
 };
 
 void inputProperties(machine *eom);
-void generateMatrix(const machine *eom);
+void printDatabase(const machine *eom);
 void finding(machine *eom);
+void printObject(const machine* eomOutput, const std::string& message);
 
 void L8Q1();
 void l8add();
