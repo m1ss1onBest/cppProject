@@ -76,7 +76,7 @@ void printStudent (const student *studList)
 //region print by month
 void printByMonth(const student *studList, const int &targetMonth)
 {
-    std::cout << "student's that were born " << targetMonth << "'th month";
+    std::cout << "student's that were born " << targetMonth << "'th month\n";
     for(int i = 0; i < stamount; i++)
     {
         if( studList[i].b.month == targetMonth)

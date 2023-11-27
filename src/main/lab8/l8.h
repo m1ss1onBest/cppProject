@@ -18,7 +18,7 @@ struct machine
 void inputProperties(machine *eom);
 void printDatabase(const machine *eom);
 void finding(machine *eom);
-void printObject(const machine* eomOutput, const std::string& message);
+void printObject(const machine* eomOutput);
 
 void L8Q1();
 

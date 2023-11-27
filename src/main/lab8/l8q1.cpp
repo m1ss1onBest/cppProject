@@ -62,7 +62,7 @@ void printDatabase(const machine *eom)
 
   for(int i = 0; i < amount; i++)
   {
-    printObject(&eom[i], "");
+    printObject(&eom[i]);
   }
 }
 
@@ -78,13 +78,14 @@ void findMaxByPrice(const machine* eom)
     }
   }
 
-  printObject(&maxPrice, "with the max price");
+  std::cout << "max price:\n";
+  printObject(&maxPrice);
 }
 
 //region print object
-void printObject(const machine* eomOutput, const std::string& message = "max price: \n")
+void printObject(const machine* eomOutput)
 {
-  std::cout << '\n' << message << '\n'
+  std::cout
   << std::setw(n) << eomOutput->name
   << std::setw(n) << eomOutput->type
   << std::setw(n) << eomOutput->ram
