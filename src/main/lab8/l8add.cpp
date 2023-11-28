@@ -33,15 +33,19 @@ void addInput()
         std::cout << "enter birth date: ";
         std::cin >> book[i].b.day >> book[i].b.month >> book[i].b.year;
         std::cout << '\n';
-4    }
+    }
 }
 
 //region print all
 void addPrint()
 {
     std::cout << "MATRIX" << std::endl;
-
-    std::cout << std::setw(15) << "name" << std::setw(15) << "lname" << std::setw(15) << "zodiac" << std::setw(15) << "birth date" << std::endl;
+    
+    std::cout
+    << std::setw(15) << "name"
+    << std::setw(15) << "lname"
+    << std::setw(15) << "zodiac"
+    << std::setw(15) << "birth date" << std::endl;
 
     for(int i = 0; i < n; i ++)
     {
