@@ -3,24 +3,32 @@
 
 #include "l8.h"
 
-const int n = 8;
-znak book[n];
+const int amount_n = 8;
+znak book[amount_n];
+int n;
+
+char zod[15];
 
 void addInput()
 {
+    std::cout << "amount: ";
+    std::cin >> n;
     for(int i = 0; i < n; i++)
     {
+        std::cout << i+1 << "-th student\n";
+        
         std::cout << "enter name: ";
-        std::cin >> book[i].name[0];
+        std::cin >> book[i].name.first;
 
         std::cout << "enter lastname: ";
-        std::cin >> book[i].name[1];
+        std::cin >> book[i].name.last;
 
-        std::cout << "enter zodiac" ;
+        std::cout << "enter zodiac: " ;
         std::cin >> book[i].zodiac;
 
-        std::cout << "enter birth date";
-        std::cin >> book[i].bday[0] >> book[i].bday[1] >> book[i].bday[2];
+        std::cout << "enter birth date: ";
+        std::cin >> book[i].b.day >> book[i].b.month >> book[i].b.month;
+        std::cout << '\n';
     }
 }
 
@@ -32,14 +40,35 @@ void addPrint()
 
     for(int i = 0; i < n; i ++)
     {
-        std::cout
-        << std::setw(15) << book[i].name[0]
-        << std::setw(15) << book[i].name[1]
+        addPrintObj(&book[i]);
+    }
+    std::cout << '\n';
+}
 
-        << std::setw(15) << book[i].zodiac
+void addPrintObj(const znak *book)
+{
+    std::cout
+<< std::setw(15) << book->name.first
+<< std::setw(15) << book->name.last
 
-        << std::setw(15) << book[i].bday[0]
-        << std::setw(15) << book[i].bday[1] << std::endl;
+<< std::setw(15) << book->zodiac
+
+<< std::setw(15) << book->b.day
+<< std::setw(15) << book->b.month << std::endl;
+}
+
+void findByZodiac()
+{
+    std::cout << "enter zodiac: ";
+    std::cin.ignore();
+    std::cin.get(zod, 15);
+
+    for(int i = 0; i < n; i++)
+    {
+        if(strcmp(zod, book[i].zodiac) == 0)
+        {
+            addPrintObj(&book[i]);
+        }
     }
 }
 
@@ -47,4 +76,6 @@ void l8add()
 {
     addInput();
     addPrint();
+
+    findByZodiac();
 }

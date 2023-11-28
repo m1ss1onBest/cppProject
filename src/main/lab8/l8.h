@@ -2,6 +2,13 @@
 #pragma once
 #include <string>
 
+//region global
+struct birth
+{
+    short day;
+    short month;
+    mutable short year;
+};
 
 //region q1
 struct machine
@@ -23,12 +30,6 @@ void printObject(const machine* eomOutput);
 void L8Q1();
 
 //region q2
-struct birth
-{
-    short day;
-    short month;
-    mutable short year;
-};
 
 struct student
 {
@@ -47,11 +48,21 @@ void printByMonth(const student *studList, const int &targetMonth);
 void L8Q2();
 
 //region additional
+struct name
+{
+    char first[20];
+    char last[20];
+};
+
 struct znak
 {
-    char name[2][30];
+    name name;
     char zodiac[15];
-    int bday[3];
+    birth b;
 };
+
+void addInput();
+void addPrint();
+void addPrintObj(const znak *book);
 
 void l8add();
