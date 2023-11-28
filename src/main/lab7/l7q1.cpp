@@ -8,9 +8,9 @@ bool divisionBy0 = false;
 double calcX(const double z)
 {
     //[0.99; 1.01]
-    if(z <= 1 + calcError && z >= 1 - calcError)
+    if(z - 1 < calcError)
     {
-        std::cout << "division by 0 ";
+        std::cout << "incorrect value";
         divisionBy0 = true;
         return 1;
     }
